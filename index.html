@@ -1,96 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lamin Yamal | FC Barcelona</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RaysTech Software Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #1c1c1c, #3b3b3b);
-      color: #fff;
-    }
-    header {
-      text-align: center;
-      padding: 3rem 1rem;
-      background-color: #004aad;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      font-style: italic;
-    }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    .profile-pic {
-      display: block;
-      margin: 0 auto 2rem;
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      box-shadow: 0 0 10px rgba(255,255,255,0.3);
-    }
-    .about, .career, .contact {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      border-bottom: 2px solid #00ccff;
-      padding-bottom: 0.5rem;
-      color: #00ccff;
-    }
     footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
       text-align: center;
-      padding: 2rem 1rem;
-      background-color: #222;
-      font-size: 0.9rem;
     }
-    a {
-      color: #00ccff;
-      text-decoration: none;
+    .hero {
+      background: linear-gradient(to right, #0d6efd, #6f42c1);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Lamin Yamal</h1>
-    <p>FC Barcelona | Forward</p>
-  </header>
-
-  <section>
-    <img src="https://example.com/lamin-yamal.jpg" alt="Lamin Yamal" class="profile-pic" />
-    
-    <div class="about">
-      <h2>About Me</h2>
-      <p>I'm Lamin Yamal, a passionate young footballer representing FC Barcelona. With speed, flair, and precision, I bring energy and excitement to every match.</p>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">RaysTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <div class="career">
-      <h2>Career Highlights</h2>
-      <ul>
-        <li>Debuted for Barcelona at just 15 years old</li>
-        <li>Youngest player to feature in a La Liga match for the club</li>
-        <li>Part of Spain's youth national team</li>
-      </ul>
-    </div>
-
-    <div class="contact">
-      <h2>Get in Touch</h2>
-      <p>Follow me on <a href="https://instagram.com/laminyamal" target="_blank">Instagram</a> or reach out via email: <a href="mailto:contact@laminyamal.com">contact@laminyamal.com</a></p>
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to RaysTech</h1>
+      <p>Your trusted partner in software development and IT solutions.</p>
     </div>
   </section>
 
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>RaysTech is a forward-thinking software company dedicated to building modern solutions that help businesses thrive. Our team consists of highly skilled professionals specializing in various aspects of software development, UI/UX design, and digital transformation.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-light py-5">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Custom Software Development</li>
+        <li>Web and Mobile App Development</li>
+        <li>Cloud Integration</li>
+        <li>UI/UX Design</li>
+        <li>IT Consultancy</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2>Our Projects</h2>
+      <p>We have delivered high-quality solutions for clients in various industries such as finance, healthcare, education, and e-commerce. Our focus on quality and innovation sets us apart.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Lamin Yamal. All rights reserved.
+    <div class="container">
+      <p>&copy; 2025 RaysTech Software Company. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
